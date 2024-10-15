@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web|Dev | Scale Your Business</title>
+        <link rel="shortcut icon" href="assets/images/Logo.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/inner-css.css">
+    </head>
+    <body>
+         <!-- Loading Animation -->
+        <div id="loading-animation">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div> 
+        <header>
+            <a href="#"><h1>Web|Dev</h1></a>
+            <div class="menu"><img src="assets/images/icons/menu.png"
+                    alt="menu"></div>
+            <nav>
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link"
+                            data-hover="Portfolio">Our
+                            Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link"
+                            data-hover="We-Who?">About
+                            Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link"
+                            data-hover="What We Do?">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link"
+                            data-hover="Say Hi!">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lan1">
+            <div class="select-container">
+                <div class="svg-container" onclick="toggleDropdown()">
+                    <div class="options" id="options">
+                        <div data-value="en" onclick="selectOption('en', event)">English</div>
+                        <div data-value="hi" onclick="selectOption('hi', event)">हिन्दी</div>
+                        <div data-value="kn" onclick="selectOption('kn', event)">ಕನ್ನಡ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="line"></div>
+        </header>
+        <div class="container active">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <section class="hero" id="hero">
+            <h1 class="hero-text">We Create a bold websites <br>for your
+                business.</h1>
+            <!-- <div class="background-pattern"></div> -->
+            <a href="#contact" class="contact-btn">Get in Touch with Us!</a>
+        </section>
+        <section class="work" id="work">
+            <h2 class="work-title">Recent Work</h2>
+            <a class="work1" href="https://ketan.wuaze.com/">
+                <div class="work-image"><img src="assets/images/web1.png"
+                        alt="image"></div>
+                <h3 class="work-text">KetShar</h3>
+                <p>Student Portfolio Website</p>
+            </a>
+            <a class="work2" href="https://ndcr.rf.gd/">
+                <div class="work-image"><img src="assets/images/web2.png"
+                        alt="image"></div>
+                <h3 class="work-text">NdCr</h3>
+                <p>Transport Services Website</p>
+            </a>
+        </section>
+        <section class="story" id="story">
+            <h2 class="story-title">Tell Us Your Story......</h2>
+            <div class="circle-cursor" id="circle-cursor"></div>
+            <form action="assets/php/storymail.php" method="post">
+                Hi, my name is
+                <input type="text" id="bus-type" name="name"
+                    placeholder="Your Name" required>
+                and I'm a <select name="business-owns" required>
+                    <option value="business owner">Business owner</option>
+                    <option value="founder">Founder</option>
+                    <option value="Creator">Creator</option>
+                </select> at a place called
+                <input type="text" name="business-name"
+                    placeholder="Your Business Name" required> I'm planning a
+                website for my
+                <select id="bus-type" name="business-type" required>
+                    <option value="business">Business</option>
+                    <option value="start-up">Start - up</option>
+                    <option value="company">Company</option>
+                </select>
+                You can give me a buzz on
+                <input type="tel" name="phone" placeholder="Phone Number (opt)">
+                or drop me an email at
+                <input type="email" name="email" placeholder="Your Email"
+                    required>
+                <button type="submit" class="story-btn"
+                    name="submitContact">Submit <span> → </span> </button>
+            </form>
+        </section>
+        <section class="foot" id="contact">
+            <footer>
+                <div class="footer-left">
+                    <div class="company-name">
+                        <span class="loc-name">WeblDev Solutions , <br> Banagalore North , <br>
+                            Bangaluru , KA <br> India - 560057</span>
+                        <h4 class="loc"> Location</h4>
+                        <!-- <p>Only for Whatapp Chat</p> -->
+                    </div>
+                    <div class="headings">
+                        <ul>
+                            <li><img
+                                        src="assets/images/icons/rupee.png"
+                                        alt="Rupee"><a href="services.html"> Pricing</a></li>
+                            <li><img
+                                        src="assets/images/icons/work.png"
+                                        alt="work"><a href="#work"> Our Work</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="assets/images/icons/instlogo.png"
+                                alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/icons/linkedin.png"
+                                alt="linkedin"></a>
+                        <a href="#"><img src="assets/images/icons/github.png"
+                                alt="github"></a>
+                        <a href="#"><img src="assets/images/icons/twitter.png"
+                                alt="twitter"></a>
+                        <div class="email">Email Us : weblDev24@gmail.com</div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <form action="assets/php/sendmail.php" method="POST">
+                        <h3>Quick Contact Form</h3>
+                        <input type="text" name="full_name" id="fullname"
+                            placeholder="Name" required />
+                        <input type="email" name="email" id="email_address"
+                            placeholder="Email" required />
+                        <textarea name="message" id="message" required
+                            placeholder="Message"
+                            rows="3"></textarea>
+                        <button type="submit" name="submitContact">Send</button>
+                    </form>
+                    <div class="reserved-rights">
+                        © 2024 Web|Dev. All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/lang.js"></script>
+        <script src="assets/js/load.js"></script>
+        <script src="assets/js/cicles-anim.js"></script>
+    </body>
+</html>

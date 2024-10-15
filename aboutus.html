@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web|Dev | Scale Your Business</title>
+        <link rel="shortcut icon" href="assets/images/Logo.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/inner-css.css">
+    </head>
+    <body>
+        <header>
+            <a href="#"><h1>Web|Dev</h1></a>
+            <div class="menu"><img src="assets/images/icons/menu.png"
+                    alt="menu"></div>
+            <nav>
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"
+                            data-hover="Portfolio">Our
+                            Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-hover="We-Who?">About
+                            Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link"
+                            data-hover="What We Do?">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link"
+                            data-hover="Say Hi!">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lan1">
+                <div class="select-container">
+                    <div class="svg-container" onclick="toggleDropdown()">
+                        <div class="options" id="options">
+                            <div data-value="en"
+                                onclick="selectOption('en', event)">English</div>
+                            <div data-value="hi"
+                                onclick="selectOption('hi', event)">हिन्दी</div>
+                            <div data-value="kn"
+                                onclick="selectOption('kn', event)">ಕನ್ನಡ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="line"></div>
+        </header>
+        <section class="about">
+            <div class="about-title">
+                <h2>About Us</h2>
+                <p>Empowering your online presence through innovative web
+                    solutions.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-parg">
+                    <h2 class="whowe">Who We Are</h2>
+                    <p class="whowep">At Web|Dev Solutions, we are passionate
+                        about crafting
+                        custom web solutions that drive your business forward.
+                        With a team of experienced developers and designers, we
+                        specialize in creating responsive, user-friendly
+                        websites that not only look great but also perform
+                        exceptionally.</p>
+
+                    <h2 class="mis">Our Mission</h2>
+                    <p class="misp">Our mission is to help businesses achieve
+                        their digital
+                        goals by providing top-notch web development services.
+                        We focus on delivering solutions that are both effective
+                        and affordable, ensuring that your online presence
+                        stands out in the competitive digital landscape.</p>
+
+                    <h2 class="value">Our Values</h2>
+                    <ul>
+                        <li class="inno">Innovation: We stay ahead of the curve
+                            by embracing
+                            new technologies and trends.</li>
+                        <li class="qui">Quality: We deliver high-quality work
+                            that meets and
+                            exceeds industry standards.</li>
+                        <li class="cust">Customer Satisfaction: We are committed
+                            to providing
+                            exceptional service and support.</li>
+                    </ul>
+                </div>
+                <img src="assets/images/team.jpg" alt="Our Team">
+            </div>
+        </section>
+        <div class="call-to-action">
+            <h2 class="ctah2">Ready to Elevate Your Online Presence?</h2>
+            <p class="ctap">Contact us today to get started on your web
+                development project
+                and discover how we can help you achieve your digital goals.</p>
+            <a href="contactus.html" class="cta-button">Get in Touch</a>
+        </div>
+        <section class="foot" id="contact" style="margin-top: 80px;">
+            <footer>
+                <div class="footer-left">
+                    <div class="company-name">
+                        <span class="loc-name">WeblDev Solutions , <br> Banagalore North , <br>
+                            Bangaluru , KA <br> India - 560057</span>
+                        <h4 class="loc"> Location</h4>
+                    </div>
+                    <div class="headings">
+                        <ul>
+                            <li><img
+                                    src="assets/images/icons/rupee.png"
+                                    alt="Rupee"><a href="services.html">
+                                    Pricing</a></li>
+                            <li><img
+                                    src="assets/images/icons/work.png"
+                                    alt="work"><a href="index.html"> Our
+                                    Work</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="assets/images/icons/instlogo.png"
+                                alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/icons/linkedin.png"
+                                alt="linkedin"></a>
+                        <a href="#"><img src="assets/images/icons/github.png"
+                                alt="github"></a>
+                        <a href="#"><img src="assets/images/icons/twitter.png"
+                                alt="twitter"></a>
+                        <div class="email">Email Us : Web|Dev24@gmail.com</div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <form action="assets/php/sendmail.php" method="POST">
+                        <h3>Quick Contact Form</h3>
+                        <input type="text" name="full_name" id="fullname"
+                            placeholder="Name" required />
+                        <input type="email" name="email" id="email_address"
+                            placeholder="Email" required />
+                        <textarea name="message" id="message" required
+                            placeholder="Message"
+                            rows="3"></textarea>
+                        <button type="submit" name="submitContact">Send</button>
+                    </form>
+                    <div class="reserved-rights">
+                        © 2024 Web|Dev. All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
+        </section>
+         <script src="assets/js/script.js"></script>
+        <script src="assets/js/lang.js"></script>
+        <script src="assets/js/cicles-anim.js"></script>
+    </body>
+</html>
